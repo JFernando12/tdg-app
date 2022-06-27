@@ -51,10 +51,10 @@ function Form({form_title, columns, funcion, inputType}) {
         {Object.keys(columns).map((column) => (
           <label className="label">
             {columns[column] + ": "}
-            <input title={column} onChange={onChangeText} type={inputType[column]} required={required(inputType[column])} />
+            <input className="input" title={column} onChange={onChangeText} type={inputType[column]} required={required(inputType[column])} />
           </label>
         ))}
-        <input className="label submit" type="submit" />
+        <input className="input label submit" type="submit" />
       </form>
         
     );

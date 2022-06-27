@@ -20,6 +20,9 @@ function Item( {columns, number, data, funciones} ) {
         if(value.includes("2022")) {
             return value.substr(0,10)
         }
+        if(value.includes("https")) {
+            return <a href={value} target="_blank" >{value.substr(33)}</a>
+        }
         return value;
     }
     return(

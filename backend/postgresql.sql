@@ -119,7 +119,7 @@ create table clientphotos (
     constraint fk_order foreign key(order_id) references orders(order_id)
 );
 
-create table desingphotos (
+create table designphotos (
     desingphoto_id varchar(50) primary key,
     desingphoto_image varchar(100),
     clientphoto_id varchar(50),

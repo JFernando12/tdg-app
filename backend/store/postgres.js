@@ -27,8 +27,6 @@ const list = async(table, selects, inner, limit, offset) => {
 
     const query = `SELECT ${selectQuery} FROM ${table} ${addInner} LIMIT ${limit} OFFSET ${offset}`
 
-    console.log(query);
-
     const result = await pool.query(query);
     return result.rows;
 }

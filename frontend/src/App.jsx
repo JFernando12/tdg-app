@@ -11,6 +11,7 @@ import Order from './pages/Order';
 import Payments from './pages/Payments';
 import Shipments from './pages/Shipments';
 import AddShipment from './pages/AddShipment';
+import AddPersonalization from './pages/AddPersonalization';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/products/:client_id' element={<Products></Products>} />
           <Route path='/shipments/add/:order_id' element={<AddShipment></AddShipment>} />
           <Route path='/orders/add/:client_id/:product_id' element={<AddOrder></AddOrder>} />
+          <Route path='/personalization/:order_id' element={<AddPersonalization/>} />
         </Routes>
       </BrowserRouter>
     </div>

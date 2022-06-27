@@ -1,13 +1,13 @@
 const pagination = require("../../../utils/pagination");
 const s3 = require("../../../utils/s3");
 
-const table_designphotos = "designphotos";
+const table_clientphotos = "clientphotos";
 
 const controller = (store) => {
     const list = async(query) => {
-        let limit = 5;
+        let limit = 50;
         let offset = 0;
-        const count = await store.count(table_designphotos);
+        const count = await store.count(table_clientphotos);
         if(query.limit) {
             limit = query.limit;
         }
@@ -16,9 +16,9 @@ const controller = (store) => {
         }
 
         const selects = ["*"]
-        const next = pagination.next(table_designphotos, count, offset, limit);
-        const previous = pagination.previous(table_designphotos, count, offset, limit);
-        const rows = await store.list(table_designphotos, selects, [], limit, offset);
+        const next = pagination.next(table_clientphotos, count, offset, limit);
+        const previous = pagination.previous(table_clientphotos, count, offset, limit);
+        const rows = await store.list(table_clientphotos, selects, [], limit, offset);
 
         return({
             count,
@@ -28,27 +28,27 @@ const controller = (store) => {
         })
     }
 
-    const getOne = async(designphoto_id) => {
-        const result = await store.getOne(table_designphotos, {designphoto_id});
+    const getOne = async(order_id) => {
+        const result = await store.getOne(table_clientphotos, {order_id});
         return result;
     }
 
     const add = async(order_id, file) => {
         const id = file.filename;
-        const designphoto_image = await s3.uploadFile(file);
+        const clientphoto_image = await s3.uploadFile(file);
 
         const data = {
-            designphoto_id: id,
-            designphoto_image,
+            clientphoto_id: id,
+            clientphoto_image,
             order_id
         }
 
-        await store.add(table_designphotos, data);
+        await store.add(table_clientphotos, data);
     }
 
-    const remove = async(designphoto_id) => {
-        await store.remove(table_designphotos, {designphoto_id});
-        await s3.deleteFile(designphoto_id);
+    const remove = async(clientphoto_id) => {
+        await store.remove(table_clientphotos, {clientphoto_id});
+        await s3.deleteFile(clientphoto_id);
     }
 
     return({
