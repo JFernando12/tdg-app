@@ -1,0 +1,15 @@
+.List {
+    display: flex;
+    flex-direction: column;
+}
+
+.Item {
+    display: flex;
+    justify-content: center;
+}
+
+.column-item {
+    padding: 6px;
+    border: 1px solid black;
+    background-color: lavender;
+}

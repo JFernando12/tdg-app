@@ -1,0 +1,68 @@
+.orders {
+    display: flex;
+    flex-direction: column;
+    min-width: 1300px;
+}
+
+.order_number {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order_date {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client_name {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_name {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order_guide_sent {
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order_photo_sent {
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order_paid {
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order_revision {
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order_go {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

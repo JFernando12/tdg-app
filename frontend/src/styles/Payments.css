@@ -1,0 +1,12 @@
+.payments {
+    display: flex;
+    flex-direction: column;
+    min-width: 1300px;
+}
+
+.add_payment {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

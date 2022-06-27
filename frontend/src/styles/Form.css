@@ -1,0 +1,46 @@
+.form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    border-radius: 20px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.label {
+    margin-top: 7px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+}
+
+input {
+    border-radius: 7px;
+    background-color: white;
+    padding: 3px 7px;
+    color: black;
+    width: 170px;
+}
+
+.submit {
+    margin-top: 15px;
+    background-color: rgb(47, 61, 123);
+    border-radius: 8px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background-color: gray;
+}
+
+.form-title {
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    padding-bottom: 10px;
+}

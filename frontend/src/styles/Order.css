@@ -1,0 +1,171 @@
+.order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.order-details {
+    min-width: 300px;
+    min-height: 100px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-detail {
+    border: 1px solid black;
+    padding: 3px;
+    margin: 5px;
+    min-width: 50px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.order-form-label {
+    border: 1px solid black;
+    padding: 3px;
+    margin: 2px;
+    min-width: 150px;
+    text-align: right;
+    border-radius: 5px;
+    background-color: rgb(12, 12, 122);
+    color: white;
+}
+
+.order-client {
+    min-width: 200px;
+    min-height: 100px;
+    padding-top: 10px;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-client-label {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 0px 10px 0px 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.order-product {
+    padding: 2px;
+    min-width: 200px;
+    min-height: 100px;
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-product-label {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 150px;
+    text-align: center;
+}
+
+.order-user {
+    min-width: 200px;
+    min-height: 100px;
+    background-color: gray;
+    flex-grow: 4;
+}
+
+.order-payment {
+    min-width: 200px;
+    min-height: 100px;
+    flex-grow: 5;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-completed-label {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.exist-payment {
+    background-color: rgb(6, 6, 105);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.anticipo-label {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.order-shipment {
+    min-width: 200px;
+    min-height: 100px;
+    flex-grow: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shipment-existed {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.exist-shipment {
+    background-color: rgb(6, 6, 105);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.new-shipment {
+    background-color: rgb(6, 6, 105);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.order-personalization {
+    min-width: 200px;
+    min-height: 100px;
+    background-color: purple;
+    flex-grow: 7;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

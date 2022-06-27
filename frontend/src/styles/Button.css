@@ -1,0 +1,19 @@
+.button-component {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Times New Roman';
+    padding: 4px;
+}
+
+.button-component:hover {
+    background-color: gray;
+}
+
+
+
+.button {
+    background-color: lavender;
+}

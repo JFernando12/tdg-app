@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color: black;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.nav {
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+.link {
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,62 @@
+.clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 1300px;
+}
+
+.number {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client_name {
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.client_origin {
+    width: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client_username {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client_cp {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client_city {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client_email {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_order {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

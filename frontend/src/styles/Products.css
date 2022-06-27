@@ -1,0 +1,24 @@
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.product-select {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+}
+
+.product-select:hover {
+    background-color: grey;
+}
